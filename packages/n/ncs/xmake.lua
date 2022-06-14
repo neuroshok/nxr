@@ -8,7 +8,3 @@ package("ncs")
 	on_install(function (package)
 		import("package.tools.xmake").install(package)
 	end)
-
-	on_test(function (package)
-		
-	end)
