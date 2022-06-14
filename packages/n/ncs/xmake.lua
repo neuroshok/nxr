@@ -3,7 +3,9 @@ package("ncs")
 	add_urls("https://github.com/neuroshok/ncs.git")
 	add_urls("https://github.com/arkena00/ncs.git")
 
-	add_versions("0.0.1", "ab85c52f05b8af9ae3550f95e3d25a364b1bd835")
+	add_versions("0.0.1", "7ad8b69ed69dbf7efae2532cf7c7e91fbf31cde2")
+
+	set_kind("library")
 
 	on_install(function (package)
 		import("package.tools.xmake").install(package)
