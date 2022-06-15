@@ -5,7 +5,7 @@ package("ncs")
 
 	add_versions("0.0.1", "7ad8b69ed69dbf7efae2532cf7c7e91fbf31cde2")
 
-	set_kind("library")
+	set_kind("library", { headeronly = true })
 
 	on_install(function (package)
 		import("package.tools.xmake").install(package)
