@@ -8,5 +8,7 @@ package("ncs")
 	set_kind("library", { headeronly = true })
 
 	on_install(function (package)
-		import("package.tools.xmake").install(package)
+	    local configs = {}
+        configs.kind = "headeronly"
+		import("package.tools.xmake").install(package, configs)
 	end)
